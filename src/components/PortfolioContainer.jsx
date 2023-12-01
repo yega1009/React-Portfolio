@@ -25,4 +25,16 @@ export default function PortfolioContainer() {
     }
     return <AboutMe />;
   };
+
+  // Function to handle page change, updates the currentPage state
+  const handlePageChange = (page) => setCurrentPage(page);
+
+  // Render the Header, main content based on current page, and the Footer
+  return (
+    <div>
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <main className="mx-3">{renderPage()}</main>
+      <Footer />
+    </div>
+  );
 }
