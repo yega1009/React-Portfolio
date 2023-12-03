@@ -1,0 +1,61 @@
+.resume {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .resume a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .resume a:hover {
+    background-color: #0056b3;
+  }
+  
+  .resume .resume-download-button {
+    display: block; 
+    text-align: center;
+  }
+
+  .resume h2 {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .resume ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .resume li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    background: #e7e7e7;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
