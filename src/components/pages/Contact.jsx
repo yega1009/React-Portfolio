@@ -69,4 +69,53 @@ export default function Contact() {
       setFormData({ name: '', email: '', message: '' });
     }
   };
+
+  // Renders the contact form
+  return (
+    <div className="contact-form">
+      <h1>Contact Page</h1>
+      <form onSubmit={handleSubmit}>
+        {/* Name input field */}
+        <div>
+          <label>Name:</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {/* Error message for name field */}
+          {errors.name && <p className="error">{errors.name}</p>}
+        </div>
+        {/* Email input field */}
+        <div>
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {/* Error message for email field */}
+          {errors.email && <p className="error">{errors.email}</p>}
+        </div>
+        {/* Message textarea field */}
+        <div>
+          <label>Message:</label>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {/* Error message for message field */}
+          {errors.message && <p className="error">{errors.message}</p>}
+        </div>
+        {/* Submit button */}
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
 }
