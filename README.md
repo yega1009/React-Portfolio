@@ -2,7 +2,7 @@
 
 ## Link to Deployed Application
 
-<a href="https://text-editor-123-1328847b472b.herokuapp.com/">Yega Cho's Portfolio</a>
+<a href="https://yega-cho-portfolio.netlify.app">Yega Cho's Portfolio</a>
 
 ## Description
 
